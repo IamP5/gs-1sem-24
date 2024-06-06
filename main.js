@@ -1,5 +1,7 @@
-const ctaButton = document.querySelector('.cta-button');
+const cta = document.querySelector('.hero__cta');
+const heroContent = document.querySelector('.hero__content');
 const heroTitle = document.querySelector('.hero__title');
+const heroLogo = document.querySelector('.hero__logo');
 
 const phrases = ["Protecting Our Oceans", "Empowering Communities"];
 let phraseIndex = 0;
@@ -26,10 +28,13 @@ function typePhrase() {
       heroTitle.classList.remove("typing");
       heroTitle.classList.add("fade-out-up");
       setTimeout(() => {
-        ctaButton.classList.remove('hidden');
-        ctaButton.classList.add('fade-in-down');
+        cta.classList.remove('hidden');
+        cta.classList.add('fade-in-cta');
+        heroLogo.style.display = 'block';
+        heroLogo.classList.add('fade-in-logo');
         stopAnimation = true;
         heroTitle.textContent = '';
+        heroContent.style.paddingBottom = '20dvh';
       }, 1000); // match the duration of the fade-out transition
     }
     if (!stopAnimation) setTimeout(typePhrase, 2000);
