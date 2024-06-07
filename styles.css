@@ -3,6 +3,7 @@
   --font-size-medium: clamp(1rem, 2.5vw, 1.25rem);
   --font-size-large: clamp(3rem, 3.4vw, 6rem);
   --font-size-xl: clamp(4rem, 4.8vw, 8rem);
+  --padding-xs: 0.2rem;
   --padding-small: 1rem;
   --padding-large: 3rem;
   --gap-small: 1rem;
@@ -10,7 +11,8 @@
   --max-width-small: 600px;
   --max-width-large: 100%;
   --icon-size-small: 24px;
-  --icon-size-large: 48px;
+  --icon-size-large: 40px;
+  --icon-size-xl: 56px;
 }
 
 .typing::after {
@@ -108,10 +110,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header {
+  position: fixed;
+  height: 8dvh;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   align-items: center;
   padding: var(--padding-small);
-  background-color: white;
+  background-color: transparent;
+  color: white;
+  transition: height 0.6s, background-color 0.2s;
+  z-index: 90;
+}
+
+.header.sticky {
+  height: 3dvh;
+  background-color: rgba(46, 46, 46);
+}
+
+.header.sticky .header__icon {
+  height: var(--icon-size-large);
+  width: var(--icon-size-large);
+}
+
+.header.sticky .header__title {
+  display: block;
 }
 
 .header__logo {
@@ -119,19 +143,24 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .header__title {
-  margin-left: 0.4rem;
+  font-size: var(--font-size-medium);
+  margin-left: var(--gap-small);
+  display: none;
 }
 
 .header__icon {
-  height: var(--icon-size-small);
-  width: var(--icon-size-small);
+  height: var(--icon-size-xl);
+  width: var(--icon-size-xl);
+  transition: 0.3s;
 }
 
 .header__nav {
+  position: relative;
+  right: 40px;
   margin-left: auto;
   display: flex;
   gap: var(--gap-small);
@@ -139,8 +168,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .header__nav-link {
   text-decoration: none;
-  color: black;
-  font-weight: 500;
+  color: white;
+  font-size: var(--font-size-small);
 }
 
 .header__nav-link:hover {

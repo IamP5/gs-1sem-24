@@ -8,6 +8,7 @@ let phraseIndex = 0;
 let letterIndex = 0;
 let isDeleting = false;
 let stopAnimation = false;
+let lastScrollTop = 0;
 
 function resetAnimation() {
   heroTitle.textContent = '';
@@ -87,4 +88,10 @@ function typePhrase() {
 window.onload = function () {
   heroTitle.classList.add("typing");
   typePhrase();
+};
+
+window.onscroll = function() {
+  let header = document.querySelector('.header');
+
+  header.classList.toggle('sticky', window.scrollY > 0);
 };
