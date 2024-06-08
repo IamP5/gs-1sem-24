@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="main.js" defer></script>
   </head>
-
   <body>
     <header class="header">
-      <a class="header__logo" href="#">
+      <div class="header__logo">
         <svg
+          href="#"
+          aria-label="Ícone de três linhas onduladas horizontais em branco, posicionadas uma acima da outra. As linhas onduladas representam um símbolo estilizado de ondas."
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
@@ -34,14 +35,18 @@
           ></path>
         </svg>
         <span class="header__title">Aquamarine</span>
-      </a>
+      </div>
       <nav class="header__nav">
-        <a class="header__nav-link" href="#problems">Problems</a>
-        <a class="header__nav-link" href="#technologies">Technologies</a>
-        <a class="header__nav-link" href="#objectives">Objectives</a>
-        <a class="header__nav-link" href="#audience">Audience</a>
-        <a class="header__nav-link" href="#benefits">Benefits</a>
-        <a class="header__nav-link" href="#more">More</a>
+        <ul>
+          <li><a class="header__nav-link" href="#problems">Problems</a></li>
+          <li>
+            <a class="header__nav-link" href="#technologies">Technologies</a>
+          </li>
+          <li><a class="header__nav-link" href="#objectives">Objectives</a></li>
+          <li><a class="header__nav-link" href="#audience">Audience</a></li>
+          <li><a class="header__nav-link" href="#benefits">Benefits</a></li>
+          <li><a class="header__nav-link" href="#more">More</a></li>
+        </ul>
       </nav>
     </header>
     <main>
@@ -54,6 +59,7 @@
               height="229.16899375224543"
               viewBox="0 0 350 193.74190293064228"
               class="hero__logo"
+              aria-label="Imagem apresentando um logotipo com um design circular estilizado e abstrato que se assemelha a ondas ou água fluindo, em branco, sobre um fundo que mostra uma vista aérea da costa do oceano, com ondas quebrando na areia da praia. Abaixo do design circular, está o texto "AQUAMARINE" escrito em uma fonte moderna e sem serifa, também em branco."
             >
               <defs id="SvgjsDefs1649"></defs>
               <g
@@ -85,7 +91,7 @@
             <div class="hero__cta hidden">
               <button class="cta-button">Join Us</button>
               <button class="cta-button cta-button--text">Learn more</button>
-              <div class="arrow"></div>
+              <div class="arrow" aria-hidden="true"></div>
             </div>
           </div>
         </div>
@@ -151,6 +157,7 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   class="tech-grid__icon"
+                  aria-label="Ícone de losangos interconectados representando coleta de dados"
                 >
                   <path d="M13 7 9 3 5 7l4 4"></path>
                   <path d="m17 11 4 4-4 4-4-4"></path>
@@ -176,6 +183,7 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   class="tech-grid__icon"
+                  aria-label="Ícone de monitor de computador representando análise inteligente"
                 >
                   <rect width="20" height="14" x="2" y="3" rx="2"></rect>
                   <line x1="8" x2="16" y1="21" y2="21"></line>
@@ -199,6 +207,7 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   class="tech-grid__icon"
+                  aria-label="Ícone de círculo com ponto de interrogação representando chat inteligente"
                 >
                   <circle cx="12" cy="12" r="10"></circle>
                   <path d="M12 16v-4"></path>
@@ -222,6 +231,7 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   class="tech-grid__icon"
+                  aria-label="Ícone de nuvem com círculo representando dashboard interativo"
                 >
                   <path
                     d="M17.28 9.05a5.5 5.5 0 1 0-10.56 0A5.5 5.5 0 1 0 12 17.66a5.5 5.5 0 1 0 5.28-8.6Z"
@@ -266,6 +276,7 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   class="tech-grid__icon"
+                  aria-label="Ícone de monitor de computador representando monitoramento detalhado"
                 >
                   <rect width="20" height="14" x="2" y="3" rx="2"></rect>
                   <line x1="8" x2="16" y1="21" y2="21"></line>
@@ -289,6 +300,7 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   class="tech-grid__icon"
+                  aria-label="Ícone de cilindro de dados representando acessibilidade dos dados"
                 >
                   <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
                   <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
@@ -312,6 +324,7 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   class="tech-grid__icon"
+                  aria-label="Ícone de nuvem com círculo representando capacitação comunitária"
                 >
                   <path
                     d="M17.28 9.05a5.5 5.5 0 1 0-10.56 0A5.5 5.5 0 1 0 12 17.66a5.5 5.5 0 1 0 5.28-8.6Z"
@@ -336,6 +349,7 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   class="tech-grid__icon"
+                  aria-label="Ícone de seta saindo de um quadrado representando gestão sustentável dos oceanos"
                 >
                   <path
                     d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
@@ -344,10 +358,10 @@
                   <path d="M16 3h5v5"></path>
                   <path d="M21 3 9 15"></path>
                 </svg>
-                <h3 class="tech-grid__title">Sustainable Ocean Management</h3>
+                <h3 class="tech-grid__title">Gestão Sustentável dos Oceanos</h3>
                 <p class="tech-grid__text">
-                  Developing data-driven strategies to ensure the long-term
-                  health of our oceans.
+                  Desenvolvendo estratégias baseadas em dados para garantir a
+                  saúde a longo prazo dos nossos oceanos.
                 </p>
               </div>
             </div>
@@ -382,6 +396,7 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   class="tech-grid__icon"
+                  aria-label="Ícone de pessoa com lupa representando organizações ambientais"
                 >
                   <circle cx="10" cy="7" r="4"></circle>
                   <path d="M10.3 15H7a4 4 0 0 0-4 4v2"></path>
@@ -406,6 +421,7 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   class="tech-grid__icon"
+                  aria-label="Ícone de régua representando público geral"
                 >
                   <path
                     d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"
@@ -433,6 +449,7 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   class="tech-grid__icon"
+                  aria-label="Ícone de globo estilizado representando comunidades costeiras"
                 >
                   <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"></path>
                   <path
@@ -461,6 +478,7 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   class="tech-grid__icon"
+                  aria-label="Ícone de bandeira representando pesquisadores e cientistas"
                 >
                   <path
                     d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"
