@@ -462,6 +462,51 @@ h1, h2, h3, h4, h5, h6 {
   transition: background-color 0.3s;
 }
 
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+}
+
+.contact-form__submit {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: rgba(46, 46, 46);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  display: none;
+}
+
 .more__list {
   list-style: none;
   padding: 0;
