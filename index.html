@@ -6,6 +6,8 @@
     <title>Aquamarine</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
   </head>
   <body>
     <header class="header">
@@ -487,6 +489,118 @@
           </div>
         </div>
       </section>
+      <section id="benefits" class="section">
+				<h2>Benefícios</h2>
+				<div class="swiffy-slider carousel">
+					<ul class="slider-container">
+						<li>
+							<div class="carousel__item">
+								<svg width="64" height="64" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-label="Icon for Free Plan">
+									<path d="M12 2a10 10 0 100 20 10 10 0 000-20zM9.75 16.75L5 12l1.4-1.4 3.35 3.35 6.85-6.85L18 8.25l-8.25 8.5z"/>
+								</svg>
+								<h3>Free Plan</h3>
+								<p>Our free plan is designed for common users, offering basic features and services.</p>
+							</div>
+						</li>
+						<li>
+							<div class="carousel__item">
+								<svg width="64" height="64" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-label="Icon for Government Partnerships">
+									<path d="M3 3h2l.6 3h13.8l.6-3H21v2h-1l-.6 3H18V21H6V8H4.6L4 5H3V3zm3 5v11h10V8H6zm1 1h8v9H7V9zm3 1v2H9v-2h1zm2 0h1v2h-1v-2z"/>
+								</svg>
+								<h3>Government Partnerships</h3>
+								<p>We partner with government organizations to provide special services and benefits.</p>
+							</div>
+						</li>
+						<li>
+							<div class="carousel__item">
+								<svg width="64" height="64" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-label="Icon for ONG Partnerships">
+									<path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1.83 13.41l-3.76 1.74 1.34-4.13-3.44-3.42 4.43-.14L12 5.5l1.58 3.98 4.43.14-3.44 3.42 1.34 4.13-3.76-1.74z"/>
+								</svg>
+								<h3>ONG Partnerships</h3>
+								<p>We collaborate with ONGs to support their causes and provide our services to them.</p>
+							</div>
+						</li>
+					</ul>
+					<button type="button" class="slider-nav slider-nav-prev" aria-label="Previous slide"></button>
+					<button type="button" class="slider-nav slider-nav-next" aria-label="Next slide"></button>
+					<div class="slider-indicators">
+						<button class="active" aria-label="Slide 1"></button>
+						<button aria-label="Slide 2"></button>
+						<button aria-label="Slide 3"></button>
+					</div>
+        </div>      
+			</section>			
+      <section id="more" class="section section--dark">
+        <div class="container">
+          <div class="section__content">
+            <div class="section__text-content">
+              <span class="section__badge section__badge--dark">Mais</span>
+              <h2 class="section__title">Saiba mais sobre nosso trabalho</h2>
+              <p class="section__text">Estamos comprometidos com a inovação e a proteção dos nossos oceanos. Explore nossos recursos e descubra como você pode se envolver.</p>
+              <ul class="more__list">
+                <li class="more__item"><a href="#">Relatórios de Impacto</a></li>
+                <li class="more__item"><a href="#">Blog</a></li>
+                <li class="more__item"><a href="#">Eventos e Webinars</a></li>
+                <li class="more__item"><a href="#">Parcerias</a></li>
+                <li class="more__item"><a href="#">Contato</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__top">
+					<div class="footer__logo">
+						<svg
+							aria-label="Ícone de três linhas onduladas horizontais em branco, posicionadas uma acima da outra. As linhas onduladas representam um símbolo estilizado de ondas."
+							xmlns="http://www.w3.org/2000/svg"
+							width="32"
+							height="32"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							class="footer__icon"
+						>
+							<path
+								d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"
+							></path>
+							<path
+								d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"
+							></path>
+							<path
+								d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"
+							></path>
+						</svg>
+						<span class="footer__title">Aquamarine</span>
+					</div>
+					<div class="footer__social">
+						<a href="#" class="footer__social-link" aria-label="Facebook">
+							<svg width="24" height="24" fill="currentColor"><path d="M12 2.04c-5.5 0-9.96 4.46-9.96 9.96 0 5.04 3.66 9.19 8.44 9.88v-6.98h-2.54v-2.72h2.54v-2.08c0-2.52 1.52-3.9 3.76-3.9 1.07 0 1.98.08 2.25.12v2.62h-1.54c-1.2 0-1.43.57-1.43 1.4v1.84h2.86l-.37 2.72h-2.49v6.98c4.78-.69 8.44-4.84 8.44-9.88 0-5.5-4.46-9.96-9.96-9.96z"/></svg>
+						</a>
+						<a href="#" class="footer__social-link" aria-label="Twitter">
+							<svg width="24" height="24" fill="currentColor"><path d="M23.4 4.8c-.9.4-1.9.6-2.9.8 1-.6 1.7-1.4 2.1-2.5-.9.5-2 .9-3.1 1.1-1-1-2.5-1.6-4-1.6-3 0-5.4 2.5-5.4 5.4 0 .4 0 .8.1 1.2-4.5-.2-8.5-2.4-11.2-5.6-.5.9-.7 1.8-.7 2.8 0 1.9 1 3.5 2.5 4.5-.8 0-1.5-.2-2.2-.6v.1c0 2.7 1.9 4.9 4.3 5.4-.5.1-1 .2-1.5.2-.4 0-.7 0-1.1-.1.7 2.3 2.8 4 5.3 4-1.9 1.5-4.3 2.4-6.9 2.4-.4 0-.8 0-1.2-.1 2.4 1.6 5.4 2.5 8.6 2.5 10.3 0 16-8.5 16-15.8 0-.2 0-.4 0-.6 1.1-.8 2-1.7 2.8-2.7z"/></svg>
+						</a>
+						<a href="#" class="footer__social-link" aria-label="LinkedIn">
+							<svg width="24" height="24" fill="currentColor"><path d="M20.45 3H3.55C3.25 3 3 3.25 3 3.55v16.9c0 .3.25.55.55.55h16.9c.3 0 .55-.25.55-.55V3.55c0-.3-.25-.55-.55-.55zm-12.8 15.2H5.45V10.2h2.2v8zm-1.1-9.15c-.7 0-1.25-.55-1.25-1.25s.55-1.25 1.25-1.25 1.25.55 1.25 1.25-.55 1.25-1.25 1.25zm10.9 9.15h-2.2v-3.85c0-.9-.3-1.5-1.05-1.5-.6 0-.95.4-1.1.8-.05.1-.05.25-.05.35v4.2h-2.2V10.2h2.2v1.1c.3-.45.8-1.1 1.95-1.1 1.4 0 2.45.9 2.45 2.8v5.2z"/></svg>
+						</a>
+						<a href="#" class="footer__social-link" aria-label="Instagram">
+							<svg width="24" height="24" fill="currentColor"><path d="M16 2H8C4.69 2 2 4.69 2 8v8c0 3.31 2.69 6 6 6h8c3.31 0 6-2.69 6-6V8c0-3.31-2.69-6-6-6zm4 14c0 2.21-1.79 4-4 4H8c-2.21 0-4-1.79-4-4V8c0-2.21 1.79-4 4-4h8c2.21 0 4 1.79 4 4v8zm-7-10c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 6.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5zm5-6.9c-.62 0-1.12-.5-1.12-1.12s.5-1.12 1.12-1.12 1.12.5 1.12 1.12-.5 1.12-1.12 1.12z"/></svg>
+						</a>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<p>&copy; 2024 Aquamarine. Todos os direitos reservados.</p>
+					<nav class="footer__bottom-nav">
+						<a href="#">Política de Privacidade</a>
+						<a href="#">Termos de Serviço</a>
+					</nav>
+				</div>
+			</div>
+		</footer>
   </body>
 </html>
