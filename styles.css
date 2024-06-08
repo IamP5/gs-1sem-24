@@ -355,15 +355,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #566170;
 }
 
-.section__image {
-  display: flex;
-  justify-content: center;
-  flex: 1;
-}
-
 .section__img {
   border-radius: 1rem;
-  max-width: var(--max-width-large);
+  max-width: var(--max-width-small);
   height: auto;
 }
 
